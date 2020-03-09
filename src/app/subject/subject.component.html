@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center"><b><u>
+                        <p>SUBJECT</p>
+                    </u></b></h2>
+            <!-- ============= -->
+            <exmp-subj-sender></exmp-subj-sender>
+            <exmp-subj-receiver></exmp-subj-receiver>
+
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4><b><u>Observables</u></b></h4>
+                        <ul>
+                            <li>They are cold: Code gets executed when they have at least a single observer.</li>
+                            <li>Creates copy of data: Observable creates copy of data for each observer.</li>
+                            <li>Uni-directional: Observer can not assign value to observable(origin/master).</li>
+                            <li>The code will run for each observer . If its a HTTP call, it gets called for each
+                                observer.</li>
+                            <li>if its a service we want to share among all the components, it wont have latest result
+                                all new
+                                subscribers will still subscribe to same observable and get value from scratch</li>
+                            <li>Unicast means can emit values from the observable not from any other component.</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4><b><u>Subject</u></b></h4>
+                        <ul>
+                            <li>They are hot: code gets executed and value gets broadcast even if there is no observer.
+                            </li>
+                            <li>Shares data: Same data get shared between all observers.</li>
+                            <li>bi-directional: Observer can assign value to observable(origin/master).</li>
+                            <li>If are using using subject then you miss all the values that are broadcast before
+                                creation of
+                                observer. So here comes Replay Subject.</li>
+                            <li>multicast, can cast values to multiple subscribers and can act as both subscribers and
+                                emmitter
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul>
+                            <li>
+                                An Observable by default is unicast. Unicasting means that each subscribed observer owns
+                                an independent execution of the Observable. ... Multicasting basically means that one
+                                Observable execution is shared among multiple subscribers. Subjects are like
+                                EventEmitters, they maintain a registry of many listeners.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="well">
+                <h4><b>Some UseFull Links</b></h4>
+                <ul>
+                    <li>
+                        <a href="https://www.johndpotts.com/2018-09-10-subjects-vs-observables-multicasting/"
+                            target="_blank">https://www.johndpotts.com/2018-09-10-subjects-vs-observables-multicasting/</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

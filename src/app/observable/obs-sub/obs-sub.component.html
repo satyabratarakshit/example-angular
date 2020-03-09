@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center">Observable & Subscribe</h2>
+            <div class="well">
+                <p><b><u>Event Emitter</u></b></p>
+                <ul>
+                    <li>
+                        Angular provides an EventEmitter class that is used when publishing values from a component
+                        through the @Output() decorator. EventEmitter extends RxJS Subject, adding an emit() method so
+                        it can send arbitrary values. When you call emit(), it passes the emitted value to the next()
+                        method of any subscribed observer.
+                    </li>
+                </ul>
+            </div>
+            <div class="well">
+                <p><b><u>Observables</u></b></p>
+                <ul>
+                    <li>
+                        Observables provide support for passing messages between publishers and subscribers in your
+                        application. Observables offer significant benefits over other techniques for event handling,
+                        asynchronous programming, and handling multiple values.
+                    </li>
+                    <li>
+                        Observables are declarative—that is, you define a function for publishing values, but it is
+                        not executed until a consumer subscribes to it. The subscribed consumer then receives
+                        notifications until the function completes, or until they unsubscribe.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
