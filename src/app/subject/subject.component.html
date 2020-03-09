@@ -8,6 +8,10 @@
             <exmp-subj-sender></exmp-subj-sender>
             <exmp-subj-receiver></exmp-subj-receiver>
 
+            <hr>
+            <hr>
+            <hr>
+
             <div class="well">
                 <div class="row">
                     <div class="col-sm-6">
@@ -51,6 +55,14 @@
                                 Observable execution is shared among multiple subscribers. Subjects are like
                                 EventEmitters, they maintain a registry of many listeners.
                             </li>
+                            <li>
+                                An RxJS Subject is a special type of Observable that allows values to
+                                be multicasted to many Observers. While plain Observables are unicast (each subscribed
+                                Observer owns an independent execution of the Observable), Subjects are multicast.
+
+                                A Subject is like an Observable, but can multicast to many Observers. Subjects are like
+                                EventEmitters: they maintain a registry of many listeners.
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -61,6 +73,10 @@
                     <li>
                         <a href="https://www.johndpotts.com/2018-09-10-subjects-vs-observables-multicasting/"
                             target="_blank">https://www.johndpotts.com/2018-09-10-subjects-vs-observables-multicasting/</a>
+                    </li>
+                    <li>
+                        <a href="http://reactivex.io/rxjs/manual/overview.html#subject"
+                            target="_blank">http://reactivex.io/rxjs/manual/overview.html#subject</a>
                     </li>
                 </ul>
             </div>
